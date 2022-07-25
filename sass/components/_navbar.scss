@@ -1,0 +1,137 @@
+/*==========================================
+|   |   |   navbar css start    |   |   |   
+===========================================*/
+.navbar {
+    background-color: rgba(0, 0, 0,0.445);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    @include pgap(0, 0, 0, 0);
+
+    .navbar-brand {
+        @include pgap(30px, 30px, 0, 0);
+    }
+
+    .navbar-nav {
+        .nav-item {
+            @include pgap(0, 0, 20px, 20px);
+
+            .nav-link {
+                @include pgap(0, 0, 0, 0);
+                @include font('Roboto Condensed', 14px, 700, $menu);
+                text-transform: uppercase;
+                transition: all linear 0.3s;
+
+                &:hover {
+                    color: $menuhover;
+                }
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+    // custom mobile menu bar start
+    #mobile-menu {
+        background-color: #B93160;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 60vw;
+        padding: 40px 0;
+        transition: all linear .3s;
+
+        .nav-item {
+            .nav-link {
+                text-align: center;
+            }
+        }
+    }
+
+    .line-one.close-line1 {
+        transform: rotate(45deg);
+        position: absolute;
+        left: 5px;
+        top: 16px;
+        width: 40px;
+    }
+
+    .line-two.close-line2 {
+        opacity: 0;
+    }
+
+    .line-three.close-line3 {
+        transform: rotate(-45deg);
+        position: absolute;
+        left: 5px;
+        bottom: 16px;
+        width: 40px;
+    }
+
+    #mobile-menu.slide-menu {
+        left: 0;
+    }
+
+    .bars {
+        height: 45px;
+        width: 45px;
+        border-radius: 5px;
+        border: 1px solid #7DCE13;
+        flex-direction: column;
+        position: relative;
+
+        .line {
+            height: 4px;
+            width: 35px;
+            border-radius: 5px;
+            background-color: #7DCE13;
+            margin: 3px 0;
+        }
+
+        .line1 {
+            transition: all linear .3s;
+        }
+
+        .line2 {
+            transition: all linear .3s;
+        }
+
+        .line3 {
+            transition: all linear .3s;
+        }
+    }
+
+    // custom mobile menu bar end
+}
+.sticky-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #003865;
+    animation: sticky 1s linear;
+    z-index: 999;
+    padding: 20px, 0 !important;
+}
+
+@keyframes sticky {
+    0% {
+        top: -50px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.scroll-logo {
+    padding: 30px 0 !important;
+}
+
+/*==========================================
+|   |   |   navbar css end    |   |   |   
+===========================================*/

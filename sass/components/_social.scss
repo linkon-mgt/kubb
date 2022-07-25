@@ -1,0 +1,62 @@
+/*==========================================
+|   |   |   social css start    |   |   |   
+===========================================*/
+#social{
+    background-color: $socialbg;
+    @include pgap(50px,50px,0,0);
+    .social-header{
+        text-align: center;
+        @include pgap(0,50px,0,0);
+        h4{
+            @include font('Roboto Condensed',18px,400,$social);
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -115px;
+                width: 100px;
+                height: 1px;
+                background-color: #535353;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -115px;
+                width: 100px;
+                height: 1px;
+                background-color: #535353;
+            }
+        }
+    }
+    .social-image{
+        @include  pgap(0,60px,0,0);
+    }
+    .instagram-link{
+        height: 50px;
+        width: 180px;
+        border: 2px solid #797979;
+        text-align: center;
+        cursor: pointer;
+        h4{
+            @include font('Roboto',14px,400,$socialinsta);
+            text-transform: uppercase;
+           @include  pgap(18px,0,0,0);
+            .insta-icon {
+                color: #909090;
+                padding-right: 7px;
+            }
+            a{
+                color: #a6a6a6;
+            }
+        }
+    }
+}
+/*==========================================
+|   |   |   social css end    |   |   |   
+===========================================*/

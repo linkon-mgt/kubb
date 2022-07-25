@@ -1,0 +1,41 @@
+/*==========================================
+|   |   |   back to top css start   |   |   |   
+===========================================*/
+
+.back-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    color: #fff;
+    background-color:#003865;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 99999;
+    display: none;
+    animation: btp 1s linear;
+}
+.back-to-top:hover {
+    background-color: #3EC70B;
+    transform: scale(1.2);
+    color: #000;
+}
+
+@keyframes btp {
+    0% {
+        bottom: 85%;
+        right: 15px;
+    }
+
+    100% {
+        right: 15px;
+        bottom: 15px;
+    }
+}
+/*==========================================
+|   |   |   back to top css end    |   |   |   
+===========================================*/

@@ -1,0 +1,90 @@
+/*==========================================
+|   |   |   portfolio css start    |   |   |   
+===========================================*/
+#portfolio {
+    background-color: #f9f9f9;
+    @include pgap(20px, 80px, 0, 0);
+
+    .port-left-wrapper {
+        .port-left-header {
+            @include pgap(0, 30px, 0, 0);
+
+            h4 {
+                @include font('Roboto Condensed', 18px, 700, $servicecolor);
+                text-transform: uppercase;
+                display: inline-block;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -115px;
+                    height: 1px;
+                    width: 100px;
+                    background-color: #d9d9d9;
+                }
+            }
+        }
+
+        .port-left-content {
+            h4 {
+                @include font('Roboto Slab', 18px, 300, $servicepara);
+                line-height: 25px;
+                padding-bottom: 20px;
+            }
+
+            p {
+                @include font('Roboto', 14px, 400, $servicepara);
+                line-height: 20px;
+            }
+        }
+    }
+
+    .port-right-wrapper {
+        .port-right-header {
+            padding-bottom: 30px;
+
+            h4 {
+                @include font('Roboto Condensed', 18px, 700, $servicecolor);
+                text-transform: uppercase;
+                display: inline-block;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -115px;
+                    height: 1px;
+                    width: 100px;
+                    background-color: #d9d9d9;
+                }
+            }
+        }
+
+        .port-right-icon {
+            text-align: center;
+        }
+
+        .port-right-content {
+            padding-left: 10px;
+
+            h4 {
+                @include font('Roboto Slab', 17px, 700, $servicecolor);
+                text-transform: capitalize
+            }
+
+            p {
+                @include font('Roboto', 14px, 400, $servicepara);
+                line-height: 22px;
+            }
+        }
+    }
+
+}
+/*==========================================
+|   |   |   portfolio css end    |   |   |   
+===========================================*/

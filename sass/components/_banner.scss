@@ -1,0 +1,29 @@
+/*==========================================
+|   |   |   banner css start    |   |   |   
+===========================================*/
+#banner{
+    background: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include pgap(332px,250px,0,0);
+    .banner-content{
+        text-align: center;
+        h1{
+            @include pgap(0, 20px, 0, 0);
+            @include font('Roboto Condensed', 50px, 700, $normal);
+            text-transform: uppercase;
+        }
+        h2{
+            @include pgap(0, 20px, 0, 0);
+            @include font('Roboto Slab', 40px, 300, $normal);
+            text-transform: uppercase;
+        }
+        p{
+            @include font('Roboto Slab', 14px, 300, $normal);
+        }
+    }
+}
+/*==========================================
+|   |   |   banner css end    |   |   |   
+===========================================*/

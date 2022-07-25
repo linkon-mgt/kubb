@@ -1,0 +1,14 @@
+// import common part
+@import './common/common';
+
+// import mixins part
+@import './mixins/font';
+@import './mixins/gap';
+
+
+// import variable part
+@import './variable/backgroundcolor';
+@import './variable/color';
+
+// import pages part
+@import './pages/home'

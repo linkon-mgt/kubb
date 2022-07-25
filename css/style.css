@@ -1,0 +1,751 @@
+/*==========================================
+|   |   |   common css start    |   |   |   
+===========================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/*==========================================
+|   |   |   common css end    |   |   |   
+===========================================*/
+/*==========================================
+|   |   |   navbar css start    |   |   |   
+===========================================*/
+.navbar {
+  background-color: rgba(0, 0, 0, 0.445);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar .navbar-brand {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar .navbar-nav .nav-item {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  transition: all linear 0.3s;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #28b8d8;
+}
+.navbar .navbar-nav .nav-item:last-child {
+  padding-right: 0;
+}
+.navbar #mobile-menu {
+  background-color: #B93160;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100vh;
+  width: 60vw;
+  padding: 40px 0;
+  transition: all linear 0.3s;
+}
+.navbar #mobile-menu .nav-item .nav-link {
+  text-align: center;
+}
+.navbar .line-one.close-line1 {
+  transform: rotate(45deg);
+  position: absolute;
+  left: 5px;
+  top: 16px;
+  width: 40px;
+}
+.navbar .line-two.close-line2 {
+  opacity: 0;
+}
+.navbar .line-three.close-line3 {
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 5px;
+  bottom: 16px;
+  width: 40px;
+}
+.navbar #mobile-menu.slide-menu {
+  left: 0;
+}
+.navbar .bars {
+  height: 45px;
+  width: 45px;
+  border-radius: 5px;
+  border: 1px solid #7DCE13;
+  flex-direction: column;
+  position: relative;
+}
+.navbar .bars .line {
+  height: 4px;
+  width: 35px;
+  border-radius: 5px;
+  background-color: #7DCE13;
+  margin: 3px 0;
+}
+.navbar .bars .line1 {
+  transition: all linear 0.3s;
+}
+.navbar .bars .line2 {
+  transition: all linear 0.3s;
+}
+.navbar .bars .line3 {
+  transition: all linear 0.3s;
+}
+
+.sticky-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #003865;
+  -webkit-animation: sticky 1s linear;
+          animation: sticky 1s linear;
+  z-index: 999;
+  padding: 20px, 0 !important;
+}
+
+@-webkit-keyframes sticky {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes sticky {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.scroll-logo {
+  padding: 30px 0 !important;
+}
+
+/*==========================================
+|   |   |   navbar css end    |   |   |   
+===========================================*/
+/*==========================================
+|   |   |   banner css start    |   |   |   
+===========================================*/
+#banner {
+  background: url(../images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 332px;
+  padding-bottom: 250px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#banner .banner-content {
+  text-align: center;
+}
+#banner .banner-content h1 {
+  padding-top: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Roboto Condensed";
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+#banner .banner-content h2 {
+  padding-top: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Roboto Slab";
+  font-size: 40px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+}
+#banner .banner-content p {
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+}
+
+/*==========================================
+|   |   |   banner css end    |   |   |   
+===========================================*/
+/*==========================================
+|   |   |   service css start    |   |   |   
+===========================================*/
+#service {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#service .service-header {
+  text-align: center;
+}
+#service .service-header h2 {
+  font-family: "Roboto Slab";
+  font-size: 30px;
+  font-weight: 300;
+  color: #444444;
+  padding-top: 0;
+  padding-bottom: 25px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#service .service-header p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  padding-top: 0;
+  padding-bottom: 80px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#service .service-item-head {
+  text-align: center;
+}
+#service .service-item-head h3 {
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 700;
+  color: #444444;
+  padding-top: 0;
+  padding-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0;
+  text-transform: uppercase;
+}
+#service .service-slider .service-slider-item .service-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box;
+  border: 1px solid #e3e3e3;
+}
+#service .service-slider .service-slider-item .service-item .service-item-content {
+  text-align: center;
+}
+#service .service-slider .service-slider-item .service-item .service-item-content h4 {
+  font-family: "Roboto Slab";
+  font-size: 17px;
+  font-weight: 700;
+  color: #444444;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#service .service-slider .service-slider-item .service-item .service-item-content p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  line-height: 22px;
+}
+
+/*==========================================
+|   |   |   service css end    |   |   |   
+===========================================*/
+/*==========================================
+|   |   |   social css start    |   |   |   
+===========================================*/
+#social {
+  background-color: #2c2c2c;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#social .social-header {
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 50px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#social .social-header h4 {
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  color: #d5d5d5;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+#social .social-header h4::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -115px;
+  width: 100px;
+  height: 1px;
+  background-color: #535353;
+}
+#social .social-header h4::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -115px;
+  width: 100px;
+  height: 1px;
+  background-color: #535353;
+}
+#social .social-image {
+  padding-top: 0;
+  padding-bottom: 60px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#social .instagram-link {
+  height: 50px;
+  width: 180px;
+  border: 2px solid #797979;
+  text-align: center;
+  cursor: pointer;
+}
+#social .instagram-link h4 {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  padding-top: 18px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+#social .instagram-link h4 .insta-icon {
+  color: #909090;
+  padding-right: 7px;
+}
+#social .instagram-link h4 a {
+  color: #a6a6a6;
+}
+
+/*==========================================
+|   |   |   social css end    |   |   |   
+===========================================*/
+/*==========================================
+|   |   |   journal css start    |   |   |   
+===========================================*/
+#journal {
+  background-color: #f9f9f9;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#journal .journal-header {
+  padding-top: 0;
+  padding-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#journal .journal-header h4 {
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 700;
+  color: #444444;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+}
+#journal .journal-header h4::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -115px;
+  width: 100px;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+#journal .journal-header h4::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -115px;
+  width: 100px;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+#journal .journal-item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 0;
+  padding-right: 0;
+  border: 1px solid #e3e3e3;
+  box-sizing: border-box;
+}
+#journal .journal-item .journal-item-header h4 {
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  font-weight: 700;
+  color: #444444;
+  padding-top: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#journal .journal-item .journal-item-header p {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  color: #999;
+  padding-top: 0;
+  padding-bottom: 25px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#journal .journal-item .journal-item-content {
+  padding-top: 25px;
+  padding-bottom: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#journal .journal-item .journal-item-content .journal-item-content-text p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  line-height: 20px;
+}
+#journal .journal-item .journal-item-content .journal-item-content-link {
+  padding-top: 25px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+#journal .journal-item .journal-item-content .journal-item-content-link h5 a {
+  font-family: "Roboto";
+  font-size: 11px;
+  font-weight: 400;
+  color: #999;
+  position: relative;
+  text-transform: uppercase;
+}
+#journal .journal-item .journal-item-content .journal-item-content-link h5 a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #28b8d8;
+}
+#journal .journal-item .journal-item-content .journal-item-content-link h5 span {
+  font-size: 16px;
+  color: #b3b3b3;
+  margin-left: 45%;
+}
+#journal .journal-item .journal-item-content .journal-item-content-link h5 span svg {
+  padding-right: 5px;
+  font-size: 16px;
+}
+
+/*==========================================
+|   |   |   journal css end    |   |   |   
+===========================================*/
+/*==========================================
+|   |   |   portfolio css start    |   |   |   
+===========================================*/
+#portfolio {
+  background-color: #f9f9f9;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#portfolio .port-left-wrapper .port-left-header {
+  padding-top: 0;
+  padding-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#portfolio .port-left-wrapper .port-left-header h4 {
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 700;
+  color: #444444;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+}
+#portfolio .port-left-wrapper .port-left-header h4::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -115px;
+  height: 1px;
+  width: 100px;
+  background-color: #d9d9d9;
+}
+#portfolio .port-left-wrapper .port-left-content h4 {
+  font-family: "Roboto Slab";
+  font-size: 18px;
+  font-weight: 300;
+  color: #666;
+  line-height: 25px;
+  padding-bottom: 20px;
+}
+#portfolio .port-left-wrapper .port-left-content p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  line-height: 20px;
+}
+#portfolio .port-right-wrapper .port-right-header {
+  padding-bottom: 30px;
+}
+#portfolio .port-right-wrapper .port-right-header h4 {
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 700;
+  color: #444444;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+}
+#portfolio .port-right-wrapper .port-right-header h4::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -115px;
+  height: 1px;
+  width: 100px;
+  background-color: #d9d9d9;
+}
+#portfolio .port-right-wrapper .port-right-icon {
+  text-align: center;
+}
+#portfolio .port-right-wrapper .port-right-content {
+  padding-left: 10px;
+}
+#portfolio .port-right-wrapper .port-right-content h4 {
+  font-family: "Roboto Slab";
+  font-size: 17px;
+  font-weight: 700;
+  color: #444444;
+  text-transform: capitalize;
+}
+#portfolio .port-right-wrapper .port-right-content p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  line-height: 22px;
+}
+
+/*==========================================
+|   |   |   portfolio css end    |   |   |   
+===========================================*/
+/*==========================================
+|   |   |   footer css start    |   |   |   
+===========================================*/
+#footer {
+  background-color: #373737;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#footer .footer-item1 h4 {
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  font-weight: 700;
+  color: #f0f0f0;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+#footer .footer-item1 p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #cacaca;
+  line-height: 24px;
+}
+#footer .footer-item1 .footer-icon {
+  font-size: 12px;
+  color: #cacaca;
+}
+#footer .footer-item1 .footer-text p {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  color: #cacaca;
+}
+#footer .footer-item2 h4 {
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  font-weight: 700;
+  color: #f0f0f0;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+#footer .footer-item2 .footer-content p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #cacaca;
+  line-height: 20px;
+  margin-bottom: 35px;
+}
+#footer .footer-item3 h4 {
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  font-weight: 700;
+  color: #f0f0f0;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+#footer .footer-item3 .footer-content p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #cacaca;
+  line-height: 20px;
+  margin-bottom: 35px;
+}
+#footer .footer-item4 h4 {
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  font-weight: 700;
+  color: #f0f0f0;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+#footer .footer-item4 .footer-content p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #cacaca;
+  line-height: 20px;
+  margin-bottom: 35px;
+}
+
+/*==========================================
+|   |   |   footer css end    |   |   |   
+===========================================*/
+/*==========================================
+|   |   |   copyright css start    |   |   |   
+===========================================*/
+#copyright {
+  background-color: #333333;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#copyright .copy-text p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #cacaca;
+}
+
+/*==========================================
+|   |   |   copyright css end    |   |   |   
+===========================================*/
+/*==========================================
+|   |   |   back to top css start   |   |   |   
+===========================================*/
+.back-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #003865;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 99999;
+  display: none;
+  -webkit-animation: btp 1s linear;
+          animation: btp 1s linear;
+}
+
+.back-to-top:hover {
+  background-color: #3EC70B;
+  transform: scale(1.2);
+  color: #000;
+}
+
+@-webkit-keyframes btp {
+  0% {
+    bottom: 85%;
+    right: 15px;
+  }
+  100% {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+@keyframes btp {
+  0% {
+    bottom: 85%;
+    right: 15px;
+  }
+  100% {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+/*==========================================
+|   |   |   back to top css end    |   |   |   
+===========================================*//*# sourceMappingURL=style.css.map */

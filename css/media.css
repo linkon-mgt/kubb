@@ -1,0 +1,469 @@
+/*============================================================
+|   |   |   responsive for large device start   |   |   |   
+=============================================================*/
+@media(min-width:992px) and (max-width:1199.99px){
+/* nothing to adjust in this device  */
+}
+/*============================================================
+|   |   |   responsive for large device end   |   |   |   
+=============================================================*/
+
+
+
+/*============================================================
+|   |   |   responsive for medium device start   |   |   |   
+=============================================================*/
+@media(min-width:768px) and (max-width:991.99px){
+     /* navbar part start */
+     .navbar .navbar-brand {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .navbar .bars {
+        transform: scale(.9);
+    }
+
+    .navbar .navbar-nav .nav-item {
+        padding: 8px 0;
+    }
+
+    .scroll-logo {
+        padding: 25px 0 !important;
+    }
+
+    /* navbar part end */
+
+     /* banner part start */
+     #banner {
+        padding-top: 250px;
+        padding-bottom: 200px;
+    }
+    #banner .banner-content h1 {
+        padding-bottom: 10px;
+    }
+
+    #banner .banner-content h2 {
+        padding-bottom: 10px;
+    }
+
+    /* banner part end */
+
+
+    /* social part start */
+    #social .social-header h4::after {
+        display: none;
+    }
+
+    #social .social-header h4::before {
+        display: none;
+    }
+    /* social part end */
+
+
+     /* journal part start */
+
+    #journal .journal-header h4::after {
+        display: none;
+    }
+
+    #journal .journal-header h4::before {
+        display: none;
+    }
+    /* journal part end */
+
+
+    /* portfolio part start */
+
+    #portfolio .port-left-wrapper .port-left-header {
+        text-align: center;
+    }
+
+    #portfolio .port-left-wrapper .port-left-header h4::after {
+        display: none;
+    }
+
+
+    #portfolio .port-left-wrapper .port-left-content p {
+        padding-bottom: 30px;
+    }
+
+    #portfolio .port-right-wrapper .port-right-header h4::after {
+        display: none;
+    }
+
+    #portfolio .port-right-wrapper .port-right-header {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    /* portfolio part end */
+
+
+     /* footer part start */
+     .footer-item1 h4,
+     .footer-item2 h4,
+     .footer-item3 h4,
+     .footer-item4 h4 {
+         text-align: center;
+     }
+ 
+     .footer-item1,
+     .footer-item2,
+     .footer-item3 {
+         margin-bottom: 50px;
+     }
+ 
+     /* footer part end */
+
+}
+/*============================================================
+|   |   |   responsive for medium device end   |   |   |   
+=============================================================*/
+
+
+/*============================================================
+|   |   |   responsive for small device start   |   |   |   
+=============================================================*/
+@media(min-width:576px) and (max-width:767.99px){
+     /* navbar part start */
+     .navbar .navbar-brand {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .navbar .navbar-brand img {
+        transform: scale(.9);
+    }
+
+    .navbar .bars {
+        transform: scale(.8);
+    }
+
+    .navbar .navbar-nav .nav-item {
+        padding: 5px 0;
+    }
+
+    .scroll-logo {
+        padding: 20px 0 !important;
+    }
+
+    /* navbar part end */
+
+     /* banner part start */
+     #banner {
+        padding-top: 200px;
+        padding-bottom: 160px;
+    }
+    #banner .banner-content h1 {
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+
+    #banner .banner-content h2 {
+        padding-bottom: 10px;
+        font-size: 30px;
+    }
+
+    /* banner part end */
+
+
+    /* service part end */
+    #service {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #service .service-header p {
+        padding-bottom: 65px;
+    }
+
+    /* service part end */
+
+
+    /* social part start */
+    #social .social-header h4::after {
+        display: none;
+    }
+
+    #social .social-header h4::before {
+        display: none;
+    }
+
+    #social .social-image {
+        padding-bottom: 0;
+    }
+
+    #social .instagram-link {
+        margin-top: 30px;
+    }
+
+    /* social part end */
+
+
+    /* journal part start */
+    #journal {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #journal .journal-header h4::after {
+        display: none;
+    }
+
+    #journal .journal-header h4::before {
+        display: none;
+    }
+
+    #journal .journal-item .journal-item-content .journal-item-content-link h5 span {
+        margin-left: 23%;
+    }
+
+    /* journal part end */
+
+
+    /* portfolio part start */
+
+    #portfolio .port-left-wrapper .port-left-header {
+        text-align: center;
+    }
+
+    #portfolio .port-left-wrapper .port-left-header h4::after {
+        display: none;
+    }
+
+    #portfolio .port-left-wrapper .port-left-content p {
+        padding-bottom: 30px;
+    }
+
+    #portfolio .port-right-wrapper .port-right-header h4::after {
+        display: none;
+    }
+
+    #portfolio .port-right-wrapper .port-right-header {
+        text-align: center;
+    }
+
+    /* portfolio part end */
+
+
+     /* footer part start */
+     .footer-item1 h4,
+     .footer-item2 h4,
+     .footer-item3 h4,
+     .footer-item4 h4 {
+         text-align: center;
+     }
+ 
+     .footer-item1,
+     .footer-item2,
+     .footer-item3 {
+         margin-bottom: 50px;
+     }
+ 
+     /* footer part end */
+}
+/*============================================================
+|   |   |   responsive for small device start   |   |   |   
+=============================================================*/
+
+
+/*============================================================
+|   |   |   responsive for xtra small device start   |   |   |   
+=============================================================*/
+@media(max-width:575.99px) {
+
+    /* navbar part start */
+    .navbar .navbar-brand {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .navbar .navbar-brand img {
+        transform: scale(.8);
+    }
+
+    .navbar .bars {
+        transform: scale(.7);
+    }
+
+    .navbar .navbar-nav .nav-item {
+        padding: 5px 0;
+    }
+
+    .scroll-logo {
+        padding: 15px 0 !important;
+    }
+
+    /* navbar part end */
+
+
+    /* banner part start */
+    #banner {
+        padding-top: 130px;
+        padding-bottom: 100px;
+    }
+
+    #banner .banner-content h1 {
+        font-size: 32px;
+        padding-bottom: 0;
+    }
+
+    #banner .banner-content h2 {
+        padding-bottom: 0;
+        font-size: 25px;
+    }
+
+    #banner .banner-content p {
+        font-size: 13px;
+    }
+
+    /* banner part end */
+
+
+    /* service part end */
+    #service {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #service .service-header h2 {
+        font-size: 24px;
+        padding-bottom: 15px;
+    }
+
+    #service .service-header p {
+        font-size: 13px;
+        padding-bottom: 50px;
+    }
+
+    /* service part end */
+
+
+    /* social part start */
+    #social .social-header h4::after {
+        display: none;
+    }
+
+    #social .social-header h4::before {
+        display: none;
+    }
+
+    #social .social-header {
+        padding-bottom: 25px;
+    }
+
+    #social .social-image {
+        padding-bottom: 0;
+    }
+
+    #social .instagram-link {
+        height: 40px;
+        width: 150px;
+        line-height: 40px;
+        margin-top: 30px;
+    }
+
+    #social .instagram-link h4 {
+        font-size: 12px;
+        padding-top: 12px;
+    }
+
+    /* social part end */
+
+
+    /* journal part start */
+    #journal {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #journal .journal-header h4::after {
+        display: none;
+    }
+
+    #journal .journal-header h4::before {
+        display: none;
+    }
+
+    #journal .journal-item .journal-item-content .journal-item-content-link h5 span {
+        margin-left: 40%;
+    }
+
+    /* journal part end */
+
+
+    /* portfolio part start */
+    #portfolio {
+        padding-bottom: 50px;
+    }
+
+    #portfolio .port-left-wrapper .port-left-header {
+        text-align: center;
+    }
+
+    #portfolio .port-left-wrapper .port-left-header h4::after {
+        display: none;
+    }
+
+    #portfolio .port-left-wrapper .port-left-content h4 {
+        font-size: 15px;
+        padding-top: 30px;
+    }
+
+    #portfolio .port-left-wrapper .port-left-content p {
+        padding-bottom: 30px;
+    }
+
+    #portfolio .port-right-wrapper .port-right-header h4::after {
+        display: none;
+    }
+
+    #portfolio .port-right-wrapper .port-right-header {
+        text-align: center;
+    }
+
+    /* portfolio part end */
+
+
+    /* footer part start */
+    .footer-item1 h4,
+    .footer-item2 h4,
+    .footer-item3 h4,
+    .footer-item4 h4 {
+        text-align: center;
+    }
+
+    .footer-item1,
+    .footer-item2,
+    .footer-item3 {
+        margin-bottom: 50px;
+    }
+
+    /* footer part end */
+
+
+    /* copyright part start */
+    #copyright .copy-text p {
+        font-size: 13px;
+    }
+
+    /* copyright part end */
+}
+
+/*============================================================
+|   |   |   responsive for xtra small device end   |   |   |   
+=============================================================*/
+
+
+/* =============================================
+|   |   |Back to top button responsive start
+================================================ */
+@media only screen and ( max-width: 767px ) {
+    .back-to-top{
+        display:none !important;
+    }
+}
+/* =============================================
+|   |   |Back to top button responsive end
+================================================ */

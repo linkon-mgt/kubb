@@ -1,0 +1,82 @@
+/*==========================================
+|   |   |   footer css start    |   |   |   
+===========================================*/
+#footer {
+    background-color: #373737;
+    @include pgap(70px, 70px, 0, 0);
+
+    .footer-item1 {
+        h4 {
+            @include font('Roboto Condensed', 16px, 700, #f0f0f0);
+            text-transform: uppercase;
+            padding-bottom: 20px;
+        }
+
+        p {
+            @include font('Roboto', 14px, 400, #cacaca);
+            line-height: 24px;
+        }
+
+        .footer-icon {
+            font-size: 12px;
+            color: #cacaca;
+        }
+
+        .footer-text {
+            p {
+                @include font('Roboto', 12px, 400, #cacaca);
+            }
+        }
+    }
+
+    .footer-item2 {
+        h4 {
+            @include font('Roboto Condensed', 16px, 700, #f0f0f0);
+            text-transform: uppercase;
+            padding-bottom: 20px;
+        }
+
+        .footer-content {
+            p {
+                @include font('Roboto', 14px, 400, #cacaca);
+                line-height:20px ;
+                margin-bottom: 35px;
+            }
+        }
+    }
+    .footer-item3 {
+        h4 {
+            @include font('Roboto Condensed', 16px, 700, #f0f0f0);
+            text-transform: uppercase;
+            padding-bottom: 20px;
+        }
+
+        .footer-content {
+            p {
+                @include font('Roboto', 14px, 400, #cacaca);
+                line-height:20px ;
+                margin-bottom: 35px;
+            }
+        }
+    }
+    .footer-item4 {
+        h4 {
+            @include font('Roboto Condensed', 16px, 700, #f0f0f0);
+            text-transform: uppercase;
+            padding-bottom: 20px;
+        }
+
+        .footer-content {
+            p {
+                @include font('Roboto', 14px, 400, #cacaca);
+                line-height:20px ;
+                margin-bottom: 35px;
+            }
+        }
+    }
+
+}
+
+/*==========================================
+|   |   |   footer css end    |   |   |   
+===========================================*/
